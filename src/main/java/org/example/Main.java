@@ -65,15 +65,9 @@ public class Main {
        /** Реализация через BufferdReader */
 
        BufferedReader br = new BufferedReader(new FileReader(new File("/Програмирование/Test_file.txt")));
+       br.lines().forEach(System.out::println);
 
-       String resultBr = "";
-       while (br.readLine() != null){
-       String [] toke = resultBr.split("\\s");
-       resultBr = br.readLine();
-           System.out.println(Arrays.toString(toke));
-       }
 
-       System.out.println("Читаем через BufferReader: "+ resultBr);
 
 
 
